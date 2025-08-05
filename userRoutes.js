@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router();
+const router = express.Routers();
 const userController = require('../controllers/userController');
 
 // GET všetkých užívateľov
@@ -8,3 +8,4 @@ router.get('/', userController.getAllUsers);
 router.post('/', userController.createUser);
 
 module.exports = router;
+
